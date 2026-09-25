@@ -312,67 +312,67 @@ Use dpkg --info (= dpkg-deb --info) to examine archive files.
 
 ## 6. Commands Used
 
-### Install a `.deb` package
+#### Install a `.deb` package
 
 ```bash
 sudo dpkg -i /home/qwiklab/downloads/sublime-text_build-3211_amd64.deb
 ```
 
-### Fix dependencies
+#### Fix dependencies
 
 ```bash
 sudo apt install -f
 ```
 
-### Verify Sublime Text
+#### Verify Sublime Text
 
 ```bash
 dpkg -s sublime-text
 ```
 
-### Navigate to Downloads
+#### Navigate to Downloads
 
 ```bash
 cd /home/qwiklab/downloads
 ```
 
-### Extract `.tar` archive
+#### Extract `.tar` archive
 
 ```bash
 sudo tar -xvf extract_me.tar
 ```
 
-### Return to home directory
+#### Return to home directory
 
 ```bash
 cd ~
 ```
 
-### Create `.tar` archive
+#### Create `.tar` archive
 
 ```bash
 tar -cvf Planets.tar --absolute-names /home/qwiklab/documents/Earth /home/qwiklab/documents/Mercury /home/qwiklab/documents/Venus
 ```
 
-### Install 7-Zip
+#### Install 7-Zip
 
 ```bash
 sudo apt install p7zip-full
 ```
 
-### Verify 7-Zip
+#### Verify 7-Zip
 
 ```bash
 dpkg -s p7zip-full
 ```
 
-### Uninstall GIMP
+#### Uninstall GIMP
 
 ```bash
 sudo apt remove gimp
 ```
 
-### Verify GIMP removal
+#### Verify GIMP removal
 
 ```bash
 dpkg -s gimp
