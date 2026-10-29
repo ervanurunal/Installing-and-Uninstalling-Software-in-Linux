@@ -1,4 +1,6 @@
-## Installing and Uninstalling Software in Linux
+## Software Packaging and File Archiving on Linux
+
+---
 
 ### Overview
 
@@ -29,10 +31,11 @@ By completing this lab, I practiced:
 6. Verifying software installation and removal
 
 ---
+---
 
-## 1. Installing Sublime Text
+### 1. Installing Sublime Text
 
-### Using `dpkg`
+#### Using `dpkg`
 
 A `.deb` package containing Sublime Text was already available on the Linux machine.
 
@@ -52,7 +55,7 @@ This demonstrates that `dpkg` can install a `.deb` package but does not automati
 
 ---
 
-### Fixing Dependencies with `apt`
+#### Fixing Dependencies with `apt`
 
 I used `apt` to fix the missing dependencies:
 
@@ -74,7 +77,7 @@ After the dependencies were installed, Sublime Text was successfully configured.
 
 ---
 
-### Verifying Sublime Text
+#### Verifying Sublime Text
 
 I verified the installation using:
 
@@ -99,13 +102,13 @@ Depends: libgtk-3-0
 Description: Sublime Text is a sophisticated text editor for code, markup and prose
 ```
 
-### Result
+#### Result
 
 **Sublime Text was successfully installed.**
 
 ---
 
-## 2. Extracting a `.tar` Archive
+### 2. Extracting a `.tar` Archive
 
 The next task was to extract a `.tar` archive.
 
@@ -121,7 +124,7 @@ The archive was:
 extract_me.tar
 ```
 
-### Navigate to the Directory
+#### Navigate to the Directory
 
 I used:
 
@@ -129,7 +132,7 @@ I used:
 cd /home/qwiklab/downloads
 ```
 
-### Extract the Archive
+#### Extract the Archive
 
 I extracted the archive using:
 
@@ -146,13 +149,13 @@ home/qwiklab/extract_me/
 home/qwiklab/extract_me/great_job
 ```
 
-### Result
+#### Result
 
 The `.tar` archive was successfully extracted.
 
 ---
 
-## 3. Creating a `.tar` Archive
+### 3. Creating a `.tar` Archive
 
 After extracting the archive, I moved back to the home directory:
 
@@ -184,7 +187,7 @@ The resulting archive contained:
 /home/qwiklab/documents/Venus
 ```
 
-### Result
+#### Result
 
 The three files were successfully archived into:
 
@@ -194,7 +197,7 @@ Planets.tar
 
 ---
 
-## 4. Installing 7-Zip
+### 4. Installing 7-Zip
 
 Linux software can also be installed using the `apt` package manager.
 
@@ -221,7 +224,7 @@ p7zip-full
 
 ---
 
-### Verifying 7-Zip
+#### Verifying 7-Zip
 
 I verified the installation using:
 
@@ -246,13 +249,13 @@ Source: p7zip
 Version: 16.02+dfsg-8
 ```
 
-### Result
+#### Result
 
 **7-Zip was successfully installed.**
 
 ---
 
-## 5. Uninstalling GIMP
+### 5. Uninstalling GIMP
 
 GIMP was already installed on the Linux system.
 
@@ -287,7 +290,7 @@ Removing gimp (2.10.22-4+deb11u2) ...
 
 ---
 
-### Verifying GIMP Removal
+#### Verifying GIMP Removal
 
 I verified that GIMP was no longer installed using:
 
@@ -304,13 +307,14 @@ dpkg-query: package 'gimp' is not installed and no information is available
 Use dpkg --info (= dpkg-deb --info) to examine archive files.
 ```
 
-### Result
+#### Result
 
 **GIMP was successfully uninstalled.**
 
 ---
+---
 
-## 6. Commands Used
+### Commands Used
 
 #### Install a `.deb` package
 
@@ -379,8 +383,9 @@ dpkg -s gimp
 ```
 
 ---
+---
 
-## 7. Key Concepts
+### Key Concepts
 
 #### `dpkg`
 
@@ -406,7 +411,7 @@ In this lab, it was used to:
 
 ---
 
-## 8. `dpkg` vs `apt`
+### `dpkg` vs `apt`
 
 | Tool             | Purpose                                    |
 | ---------------- | ------------------------------------------ |
@@ -420,8 +425,9 @@ In this lab, it was used to:
 
 
 ---
+---
 
-## 9. Tar Archives
+### Tar Archives
 
 The `tar` command can be used to create and extract archives.
 
@@ -447,8 +453,9 @@ The important options used here are:
 | `-f`   | Specify archive file |
 
 ---
+---
 
-## 10. IT Support Relevance
+### IT Support Relevance
 
 These skills are useful for IT support because technicians frequently need to:
 
@@ -465,8 +472,9 @@ These skills are useful for IT support because technicians frequently need to:
 Instead of relying only on a graphical interface, an IT support specialist can use the Linux CLI to perform administrative tasks efficiently.
 
 ---
+---
 
-## 11. Cybersecurity Relevance
+### Cybersecurity Relevance
 
 Software management is also important in cybersecurity.
 
@@ -483,8 +491,9 @@ Security professionals need to understand:
 Package management is particularly relevant when maintaining systems, applying updates, removing unnecessary software, and investigating installed applications.
 
 ---
+---
 
-## 13. Skills Demonstrated
+### Skills Demonstrated
 
 * Linux command-line navigation
 * Debian package management
@@ -503,8 +512,9 @@ Package management is particularly relevant when maintaining systems, applying u
 * Linux system administration fundamentals
 
 ---
+---
 
-## Conclusion
+### Conclusion
 
 In this lab, I practiced installing and uninstalling software in Linux and working with archived files.
 
